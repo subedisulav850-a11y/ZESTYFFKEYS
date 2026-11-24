@@ -18,7 +18,8 @@ object CryptoHookManager {
     var targetPackage: String = "com.garena.game.ffi"
     var targetName: String = "Free Fire"
 
-    private const val FRIDA_SERVER_PATHS = arrayOf(
+    // Fixed: Removed 'const' because Arrays are not allowed to be compile-time constants in Kotlin
+    private val FRIDA_SERVER_PATHS = arrayOf(
         "/data/local/tmp/frida-server",
         "/data/local/tmp/fs",
         "/data/adb/frida-server",
