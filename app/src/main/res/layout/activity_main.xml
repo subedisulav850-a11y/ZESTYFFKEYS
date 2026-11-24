@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#0D1117">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FF AES / IV Extractor"
+            android:textColor="#58A6FF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvRootStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Root: checking..."
+            android:textColor="#8B949E"
+            android:textSize="13sp"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etGameName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Game name (any)"
+            android:textColor="#C9D1D9"
+            android:textColorHint="#8B949E"
+            android:backgroundTint="#30363D"
+            android:inputType="text"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etPackage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Package name (e.g. com.garena.game.ffi)"
+            android:textColor="#C9D1D9"
+            android:textColorHint="#8B949E"
+            android:backgroundTint="#30363D"
+            android:inputType="text"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ready"
+            android:textColor="#F0883E"
+            android:textSize="13sp"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnForceRoot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FORCE ROOT / RE-REQUEST SU"
+            android:backgroundTint="#1F6FEB"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="START EXTRACTOR"
+            android:backgroundTint="#238636"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STOP"
+            android:backgroundTint="#DA3633"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REFRESH KEYS + ROOT STATUS"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CLEAR LOG"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Captured Keys"
+            android:textColor="#8B949E"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvKeys"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No keys yet"
+            android:textColor="#C9D1D9"
+            android:fontFamily="monospace"
+            android:textSize="12sp"
+            android:background="#161B22"
+            android:padding="12dp" />
+    </LinearLayout>
+</ScrollView>
